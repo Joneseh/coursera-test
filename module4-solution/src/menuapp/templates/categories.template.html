@@ -1,0 +1,10 @@
+<a ui-sref="home">Return home</a>
+<div class="container">
+<h2>We have many types of food. Choose a category for details.</h2>
+	<div class="row" ng-repeat="item in mainList.items" ui-sref="items({categoryShortName: item.short_name})">
+		<div class="col-md-1"> {{item.short_name}} </div>
+		<div class="col-md-5"> {{item.name}} </div>
+	</div>
+
+
+</div>

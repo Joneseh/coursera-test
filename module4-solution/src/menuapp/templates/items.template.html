@@ -1,0 +1,9 @@
+<a ui-sref="home">Return home</a> <a ui-sref="categories">Browse categories</a>
+<div class="container">
+<h4>Items in the category {{ itemDetail.categoryShortName }}</h4>
+<div class="row" ng-repeat="item in itemDetail.items">
+	<div class="col-md-1"> {{item.short_name}} </div>
+	<div class="col-md-2"> {{item.name}} </div>
+  <div class="col-md-5"> {{item.description}}  </div>
+</div>
+</div>
